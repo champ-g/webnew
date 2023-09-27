@@ -1,0 +1,66 @@
+<!DOCTYPEHTML>
+    <html>
+
+    <head>
+        <style>
+            table,
+            tr,
+            td {
+                border: solid black;
+                width: 33%;
+                text-align: center;
+                border-collapse: collapse;
+                background-color: lightblue;
+            }
+
+            table {
+                margin: auto;
+            }
+        </style>
+        <script>
+            document.write("<table><tr><th colspan='3'> NUMBERS FROM 0 TO 10 WITH THEIR SQUARES AND CUBES </th></tr><tr><td>Number</td><td>Square</td><td>Cube</td></tr>");
+            for (var n = 0; n <= 10; n++) {
+                document.write("<tr><td>" + n + "</td><td>" + n * n + "</td><td>" + n * n * n + "</td></tr>");
+            }
+            document.write("</table>");
+        </script>
+    </head>
+
+    </html>
+---------------------------------
+<html>
+<head>
+</head>
+
+<body>
+    <center>
+        <p id="demo" />
+    </center>
+    <script>
+        var var1 = setInterval(inTimer, 1000);
+        var size = 5;
+        var ids = document.getElementById("demo");
+        function inTimer()
+         {
+            size += 5;
+            ids.innerHTML = "TEXT GROWING";
+            ids.setAttribute("style", "font-size:" + size + "px; color:red");
+            if (size >= 50) {
+                clearInterval(var1);
+                var var2 = setInterval(deTimer, 1000);
+            }
+        }
+        function deTimer() 
+        {
+            size -= 5;
+            ids.innerHTML = "TEXT SHRINKING";
+            ids.setAttribute("style", "font-size:" + size + "px; color:blue");
+            if (size <= 5) {
+                clearInterval(var1);
+
+            }
+        }
+    </script>
+</body>
+
+</html>
