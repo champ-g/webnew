@@ -1,0 +1,108 @@
+<!-- Develop and demonstrate a XHTML document that illustrates the use external style sheet, ordered list, table, borders, padding, color, and the tag. -->
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" type="text/css" href="pgm5.css" />
+    <title> Lab program5 </title>
+</head>
+
+<body>
+    <h1>This header is 36 pt</h1>
+    <h2>This header is blue</h2>
+    <p>This paragraph has a left margin of 50 pixels</p>
+    <table border="4" width="5%"> <!-- table with colour name & code -->
+        <tr>
+            <th width="204">Colour Name </th>
+            <th>Hexadecimal code</th>
+        </tr>
+        <tr>
+            <td width="204">Black</td>
+            <td>000000</td>
+        </tr>
+        <tr>
+            <td width="204">Silver</td>
+            <td>C0C0C0</td>
+        </tr>
+        <tr>
+            <td width="204">Gray</td>
+            <td>808080</td>
+        </tr>
+        <tr>
+            <td width="204">White</td>
+            <td>FFFFFF</td>
+        </tr>
+    </table>
+    <hr> <!-- horizontal line -->
+    <h3>Programming Languages</h3>
+    <ol> <!-- ordered list -->
+        <li> C Programming</li>
+        <li> Object Oriented Programming </li>
+        <li> Python Programming</li>
+    </ol>
+    <hr> <!-- horizontal line -->
+    <h3>Span Element</h3>
+    <p>
+        The span tag is an <span>inline tag </span>used to mark up a <span>part of a
+            text</span>or part of document.</p>
+    </p>
+</body>
+
+</html>
+
+
+
+p,
+table,
+li {
+    font-family: "lucida calligraphy", arial, 'sans serif';
+    margin-left: 10pt;
+}
+
+p {
+    word-spacing: 5px;
+}
+
+body {
+    background-color: rgb(196, 209, 197);
+}
+
+p,
+li,
+td {
+    font-size: 75%;
+}
+
+td {
+    padding: 0.5cm;
+}
+
+th {
+    text-align: center;
+    font-size: 85%;
+}
+
+h1,
+h2,
+h3,
+hr {
+    color: #220caf;
+}
+
+table {
+    border-style: outset;
+    background-color: rgb(108, 234, 113);
+}
+
+li {
+    list-style-type: lower-roman;
+}
+
+span {
+    color: rgb(71, 213, 241);
+    background-color: brown ;
+    font-size: 29pt;
+    font-style: italic;
+    font-weight: bold;
+}
